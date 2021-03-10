@@ -7,19 +7,19 @@
         body { margin: 0px; }
         @font-face {
             font-family: 'Bookman Old Style Custom';
-            src: url("http://saln.test/fonts/BOOKOS.ttf");
+            src: url("http://saln.uct11.com/fonts/BOOKOS.ttf");
         }
         .page-1, .page-2{
             width: 612pt !important;
             height:916pt !important;
         }
         /* .page-1{
-            background-image: url("http://saln.test/SALN-REVISED-2015-1.png");
+            background-image: url("http://saln.uct11.com/SALN-REVISED-2015-1.png");
             background-color: #cccccc;
             background-size: 612pt 916pt;
         }
         .page-2{
-            background-image: url("http://saln.test/SALN-REVISED-2015-2.png");
+            background-image: url("http://saln.uct11.com/SALN-REVISED-2015-2.png");
             background-color: #cccccc;
             background-size: 612pt 916pt;
         } */
@@ -322,13 +322,13 @@
 <body>
     <?php
         $file = $_GET['file'];
-        $data = json_decode(file_get_contents('http://saln.test/json/'.$file.'.json'), true);
+        $data = json_decode(file_get_contents('http://saln.uct11.com/json/'.$file.'.json'), true);
         if(isset($data['pageOneContents'])){
         foreach ($data['pageOneContents'] as $key => $pageOne) {
     ?>
     
     <div class="page-1">
-        <img src="http://saln.test/SALN-REVISED-2015-1.png" style="width:612pt;height:936pt">
+        <img src="http://saln.uct11.com/SALN-REVISED-2015-1.png" style="width:612pt;height:936pt">
         
         <table id="declarant-table" class="fillable">
             <tr>
@@ -461,7 +461,7 @@
         foreach ($data['pageTwoContents'] as $key => $pageTwo) {
     ?>
     <div class="page-2" >
-    <img src="http://saln.test/SALN-REVISED-2015-2.png" style="width:612pt;height:936pt">
+    <img src="http://saln.uct11.com/SALN-REVISED-2015-2.png" style="width:612pt;height:936pt">
         <table id="liabilities-table" class="fillable">
             <?php
                 $total = 0;

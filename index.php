@@ -7,7 +7,7 @@
         body { margin: 0px; }
         @font-face {
             font-family: 'Bookman Old Style Custom';
-            src: url("http://saln.test/fonts/BOOKOS.ttf");
+            src: url("http://saln.uct11.com/fonts/BOOKOS.ttf");
         }
         .page-1, .page-2{
             /* width: 612pt !important; */
@@ -443,7 +443,7 @@
                         }
                     }).then(res => {
                         console.log(res.data.filename);
-                        window.location.href = `http://saln.test/pdf?file=${res.data.filename}`;
+                        window.location.href = `http://saln.uct11.com/pdf?file=${res.data.filename}`;
                         this.submit = false;
                     }).catch(err => {
                         this.submit = false;

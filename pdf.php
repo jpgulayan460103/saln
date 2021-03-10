@@ -1,7 +1,7 @@
 <?php
 require('./vendor/autoload.php');
 $file = @$_GET['file'];
-$fileContent = file_get_contents( "http://saln.test/first?file=$file" ) ;
+$fileContent = file_get_contents( "http://saln.uct11.com/first?file=$file" ) ;
 
 
 use Dompdf\Dompdf;
